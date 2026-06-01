@@ -1,0 +1,8 @@
+.rojo {
+    border: solid 2px red;
+}
+
+.verde {
+    border: solid 2px green;
+    color: green;
+}
