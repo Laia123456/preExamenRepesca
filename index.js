@@ -25,3 +25,14 @@ function limpiar (){
 }
 
 btnLimpiar.addEventListener("click", limpiar)
+
+//
+let selectAlumnos = document.querySelector("#selectAlumnos")
+let btnAlumnos = document.querySelector("#btnAlumnos")
+let alumnos = document.querySelector("#alumnos")
+
+function insertarAlumnos(){
+  if (selectAlumnos.value == SMX2){
+    
+  }
+}
