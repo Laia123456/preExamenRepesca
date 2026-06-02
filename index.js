@@ -2,6 +2,7 @@ let bntMostrar = document.querySelector("#bntMostrar")
 let contenido = document.querySelector("#contenido")
 let btnLimpiar = document.querySelector("#btnLimpiar")
 
+
 //function mostrar (){
   //  console.log("Botón pulsado")
 //}
@@ -48,3 +49,48 @@ function url (){
 }
 
 btnAlumnos.addEventListener("click", url)
+
+//
+let divGuitarras = document.querySelector("#divGuitarras")
+const guitarras = [
+  {
+    id: 1,
+    marca: "Fender",
+    modelo: "Stratocaster",
+    tipo: "Eléctrica",
+    precio: 1200
+  },
+  {
+    id: 2,
+    marca: "Gibson",
+    modelo: "Les Paul",
+    tipo: "Eléctrica",
+    precio: 1800
+  },
+  {
+    id: 3,
+    marca: "Yamaha",
+    modelo: "FG800",
+    tipo: "Acústica",
+    precio: 250
+  },
+ {
+    id: 4,
+    marca: "Fender",
+    modelo: "Telecaster",
+    tipo: "Eléctrica",
+    precio: 1200
+  }
+
+ ];
+
+function pintarGuitarras (){
+  for (let i = 0; i < guitarras.length; i++){
+    divGuitarras.innerHTML += `<div>${guitarras[i].marca}</div>`
+    divGuitarras.innerHTML += `<div>${guitarras[i].modelo}</div>`
+    divGuitarras.innerHTML += `<div>${guitarras[i].tipo}</div>`
+    divGuitarras.innerHTML += `<div>${guitarras[i].precio}</div>`
+  }
+}
+
+pintarGuitarras()
