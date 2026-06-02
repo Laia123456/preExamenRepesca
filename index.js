@@ -30,9 +30,21 @@ btnLimpiar.addEventListener("click", limpiar)
 let selectAlumnos = document.querySelector("#selectAlumnos")
 let btnAlumnos = document.querySelector("#btnAlumnos")
 let alumnos = document.querySelector("#alumnos")
+let inputAlumnos = document.querySelector("#inputAlumnos")
 
-function insertarAlumnos(){
-  if (selectAlumnos.value == SMX2){
-    
-  }
+//function nombreAlumnos (){
+ // alumnos.innerHTML = (inputAlumnos.value + " " + selectAlumnos.value)
+///}
+
+//btnAlumnos.addEventListener("click", nombreAlumnos)
+//selectAlumnos.addEventListener("change", nombreAlumnos)
+
+//
+let inputFoto = document.querySelector("#inputFoto")
+let divInput = document.querySelector("#divInput")
+
+function url (){
+  divInput.innerHTML = `<img src="${inputFoto.value}" alt="">`
 }
+
+btnAlumnos.addEventListener("click", url)

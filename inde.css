@@ -1,3 +1,8 @@
 .divContenido {
     border: solid 3px orange;
 }
+
+.tamaño {
+    width: 200px;
+    height: 200pc;
+}
