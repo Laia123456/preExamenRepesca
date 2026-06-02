@@ -7,7 +7,7 @@ function fraseDia (){
     superior.innerHTML = selectDias.value +" "+ inputFrase.value
 }
 
-inputFrase.addEventListener("change", fraseDia)
+selectDias.addEventListener("change", fraseDia)
 inputFrase.addEventListener("input", fraseDia)
 
 let platosDisponibles = [
