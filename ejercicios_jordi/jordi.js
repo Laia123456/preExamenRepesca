@@ -29,8 +29,8 @@ const arrayCoches = [
 
 function recorrerCoches (){
     for (let i = 0; i < arrayCoches.length; i++){
-        divArray.innerHTML += `<div>${arrayCoches[i].nombre}</div>`
-        divArray.innerHTML += `<div>${arrayCoches[i].img}</div>`
+        divArray.innerHTML += `<div>${arrayCoches[i].selectArray.value}</div>`
+        divArray.innerHTML += `<div>${arrayCoches[i].selectArray.value}</div>`
     }
 }
 
